@@ -10,7 +10,7 @@ function UserLoginStore({ children }) {
   async function loginUser(userCred) {
     try{
     let res = await fetch(
-      `http://localhost:3000/users?username=${userCred.username}&&password=${userCred.password}`
+      `https://user-api-q5az.onrender.com/users?username=${userCred.username}&&password=${userCred.password}`
     );
     let usersList = await res.json();
     console.log("users list",usersList)

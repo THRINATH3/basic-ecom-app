@@ -10,7 +10,7 @@ function Register() {
     let [err,seterr]=useState('');
     async function submitUser(user) {
         try{
-        let res=await fetch('http://localhost:3000/users',{
+        let res=await fetch('https://user-api-q5az.onrender.com/users',{
         method:"POST",
         headers:{"Content-type":"application/json"},
         body: JSON.stringify(user)})

@@ -8,7 +8,7 @@ function Cart() {
 
   async function getProducts() {
     try {
-      const res = await fetch(`http://localhost:3000/user-cart?username=${currentUser.username}`);
+      const res = await fetch(`https://user-api-q5az.onrender.com/user-cart?username=${currentUser.username}`);
       const cartItems = await res.json();
       setCartItems(cartItems);
     } catch (error) {

@@ -9,7 +9,7 @@ function Edituser() {
     async function onsave(newdetails)
     {
         try {
-            const res = await fetch(`http://localhost:3000/users/${currentUser.id}`, {
+            const res = await fetch(`https://user-api-q5az.onrender.com/users/${currentUser.id}`, {
                 method: "PUT",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify(newdetails)
