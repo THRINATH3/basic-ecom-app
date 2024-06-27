@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--medium-dark);
+    align-items: center;
+}
+
+.nav-link.link:hover {
+    background-color: whitesmoke !important;
+    color:rgb(45, 24, 152) !important;
+    border-radius: 10px !important;
+}
+
+@media screen and (max-width: 650px) {
+    .headtop {
+        margin-top: 10px;
+    }
+}

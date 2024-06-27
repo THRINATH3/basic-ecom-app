@@ -1,0 +1,5 @@
+.nav-link.link2:hover {
+    background-color: rgb(219, 246, 160);
+    color:rgb(45, 24, 152) !important;
+    border-radius: 10px;
+}
